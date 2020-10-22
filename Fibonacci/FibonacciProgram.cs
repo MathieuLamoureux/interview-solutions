@@ -6,8 +6,11 @@ public class FibonacciProgram
         int userNum;
         Console.WriteLine("Enter number: ");
         userNum = Convert.ToInt32(Console.ReadLine());
-        //call function here
-        //display sequence array here
+        int[] fibArray = FibonacciSequence(userNum);
+        for (int i = 0; i < fibArray.Length; i++)
+        {
+            Console.WriteLine(fibArray[i]);
+        }
     }
     public static int[] FibonacciSequence(int x)
     {
