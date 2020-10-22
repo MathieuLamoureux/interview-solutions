@@ -11,6 +11,17 @@ public class FibonacciProgram
     }
     public static int[] FibonacciSequence(int x)
     {
-       //function logic here
+        int prev = -1;
+        int next = 1;
+        int sum;
+        int[] fib = new int[x];
+        for(int i = 0; i < x; i++)
+        {
+            sum = prev + next;
+            prev = next;
+            next = sum;
+            fib[i] = sum;
+        }
+        return fib;
     }
 }
