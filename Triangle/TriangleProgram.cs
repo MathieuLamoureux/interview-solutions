@@ -11,8 +11,13 @@ public class TriangleProgram
         triBase = Convert.ToDouble(Console.ReadLine());
         Console.WriteLine("Enter height: ");
         triHeight = Convert.ToDouble(Console.ReadLine());
-        //call function here
+        area = TriangleArea(triBase, triHeight);
         Console.WriteLine("Triangle area is: " + area);
     }
-    //function logic here
+    public static double TriangleArea(double b, double h)
+    {
+        double a;
+        a = (b * h) / 2;
+        return a;
+    }
 }
